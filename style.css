@@ -1,0 +1,49 @@
+*, ::after, ::before{
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    height: 100vh;
+    background: blueviolet;
+    display: grid;
+    place-items: center;
+}
+.wrapper{
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 25px;
+}
+.wrapper div:first-child{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.btns button{
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color: blueviolet;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    opacity: .5;
+    transition: .3s;
+}
+.btns button.active{
+    opacity: 1;
+}
+.btns button:hover{
+    opacity: 1;
+}
